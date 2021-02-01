@@ -6,7 +6,7 @@
 #    By: alilin <alilin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/01 11:54:43 by alilin            #+#    #+#              #
-#    Updated: 2021/02/01 15:11:56 by alilin           ###   ########.fr        #
+#    Updated: 2021/02/01 16:08:14 by alilin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ SRCS		= ft_strlen.s \
 			  ft_strcpy.s \
 			  ft_strcmp.s \
 			  ft_write.s \
+			  ft_read.s \
 
 OBJS		= $(SRCS:.s=.o)
 
