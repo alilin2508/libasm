@@ -15,11 +15,11 @@ NAME		= libasm.a
 INCLS		= libasm.h
 
 SRCS		= ft_strlen.s \
-			  ft_strcpy.s \
-			  ft_strcmp.s \
-			  ft_write.s \
-			  ft_read.s \
-			  ft_strdup.s \
+		  ft_strcpy.s \
+		  ft_strcmp.s \
+		  ft_write.s \
+		  ft_read.s \
+		  ft_strdup.s \
 
 OBJS		= $(SRCS:.s=.o)
 
@@ -28,14 +28,14 @@ OBJS		= $(SRCS:.s=.o)
 
 all	:		$(NAME)
 
-$(NAME)	:	$(OBJS)
+$(NAME)	:		$(OBJS)
 			ar rc $(NAME) $(OBJS)
-			gcc -Wall -Wextra -Werror -L. -lasm -o test main.c
+			gcc -Wall -Wextra -Werror -o test main.c -lasm -L .
 
 clean	:
 			rm -rf $(OBJS)
 
-fclean	:	clean
+fclean	:		clean
 			rm -rf $(NAME)
 			rm -rf test
 
