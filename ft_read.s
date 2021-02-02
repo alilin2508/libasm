@@ -2,7 +2,7 @@
 				extern			___error
 
 				section			.text
-_ft_read:		mov				rax, 0x2000003
+_ft_read:		mov				rax, 0x02000003
 				syscall
 				jc				error
 				ret
