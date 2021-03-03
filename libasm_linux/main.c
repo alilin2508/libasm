@@ -6,7 +6,7 @@
 /*   By: alilin <alilin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/01 14:15:51 by alilin            #+#    #+#             */
-/*   Updated: 2021/02/01 14:41:47 by alilin           ###   ########.fr       */
+/*   Updated: 2021/03/03 13:24:34 by alilin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,29 @@ int main(int ac, char **av)
 	ret = strcmp("xffz", "xffxfe");
 	printf("ret    strcmp : %d\n", ret);
 	ret = ft_strcmp("xffz", "xffxfe");
+	ret = strcmp("\xff\xff", "\xff");
+	printf("ret    strcmp : %d\n", ret);
+	ret = ft_strcmp("\xff\xff", "\xff");
+	printf("ret ft_strcmp : %d\n", ret);
+	ret = strcmp("\xff\xfe", "\xff");
+	printf("ret    strcmp : %d\n", ret);
+	ret = ft_strcmp("\xff\xfe", "\xff");
+	printf("ret ft_strcmp : %d\n", ret);
+	ret = strcmp("\xfe\xff", "\xfe");
+	printf("ret    strcmp : %d\n", ret);
+	ret = ft_strcmp("\xfe\xff", "\xfe");
+	printf("ret ft_strcmp : %d\n", ret);
+	ret = strcmp("\xff", "\xff\xff");
+	printf("ret    strcmp : %d\n", ret);
+	ret = ft_strcmp("\xff", "\xff\xff");
+	printf("ret ft_strcmp : %d\n", ret);
+	ret = strcmp("\xff", "\xff\xfe");
+	printf("ret    strcmp : %d\n", ret);
+	ret = ft_strcmp("\xff", "\xff\xfe");
+	printf("ret ft_strcmp : %d\n", ret);
+	ret = strcmp("\xfe", "\xfe\xff");
+	printf("ret    strcmp : %d\n", ret);
+	ret = ft_strcmp("\xfe", "\xfe\xff");
 	printf("ret ft_strcmp : %d\n", ret);
 	ret = strcmp("a", "a");
 	printf("ret    strcmp : %d\n", ret);
